@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AdrienPortfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="nav-bar-wrapper">
+      <div class="nav-bar">
+        <h4>ADRIEN</h4>
+        <div class="nav-link">
+          <a href="#">Qui suis-je</a>
+          <a href="#">Mes réalisations</a>
+          <a href="#">Me contacter</a>
+        </div>
+        <div class="social-link">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <%= yield %>
+  </body>
+</html>
