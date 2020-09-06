@@ -15,3 +15,27 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+
+first_sentence = document.querySelector('.visible')
+console.log(first_sentence)
+second_sentence = first_sentence.nextElementSibling
+console.log(second_sentence)
+
+
+
+  setTimeout(function(){
+    first_sentence.classList.remove('visible');
+  },2000)
+
+    setTimeout(function(){
+    second_sentence.classList.add('visible')
+  },2000)
+
+// a = document.querySelectorAll('.sentence-show')
+
+// console.log(a)
+
+// document.querySelector('#sentence').style.display = "block";
+// document.querySelector('#sentence').style.opacity = 1;
+
