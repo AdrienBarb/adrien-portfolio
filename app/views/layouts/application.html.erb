@@ -13,7 +13,9 @@
 
     <div class="nav-bar-wrapper">
       <div class="nav-bar">
-        <h4>ADRIEN</h4>
+        <%= link_to root_path do %>
+          <h4>ADRIEN</h4>
+        <% end %>
         <div class="nav-link">
           <%= link_to 'Qui suis-je', me_path  %>
           <%= link_to 'Mes réalisations', projects_path %>
@@ -27,7 +29,6 @@
       </div>
     </div>
 
-    <div class="layout">
       <% flash.each do |key, message| %>
         <div class="alert alert-<%= key %>">
           <%= message %>
@@ -36,7 +37,7 @@
 
 
       <%= yield %>
-    </div>
+
 
 
   </body>

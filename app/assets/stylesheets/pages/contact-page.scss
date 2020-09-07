@@ -1,5 +1,10 @@
 .contact-page-wrapper {
+  margin: 10rem 8rem 0 8rem;
   color: $white;
+
+  .phone {
+    margin-top: 3rem;
+  }
 
   h2 {
     color: $orange;
@@ -9,6 +14,4 @@
   p {
     font-size: 20px;
   }
-
-
 }
