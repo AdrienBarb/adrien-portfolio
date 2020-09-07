@@ -1,0 +1,27 @@
+.admin-projects-index-wrapper {
+  max-width: 600px;
+  margin: 8rem auto;
+  padding: 1rem;
+  border: 2px solid $white;
+  border-radius: 8px;
+  color: $white;
+
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .projects-list {
+
+    margin-top: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 18px;
+      display: block;
+    }
+  }
+}

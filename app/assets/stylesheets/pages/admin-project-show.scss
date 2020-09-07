@@ -1,0 +1,23 @@
+.admin-project-show-wrapper {
+  max-width: 600px;
+  margin: 8rem auto 0 auto;
+  padding: 1rem;
+  border: 2px solid $white;
+  border-radius: 8px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+  }
+
+  link {
+    display: flex;
+    align-items: center;
+
+    .button-nav {
+      margin-right: 1rem;
+    }
+  }
+}

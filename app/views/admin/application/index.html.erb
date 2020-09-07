@@ -1,3 +1,10 @@
-<%= @user.email %>
-<%= link_to 'Voir mes projets', admin_projects_path %>
+<div class="admin-app-index-wrapper">
+
+  <h2><%= @user.email %></h2>
+
+  <%= link_to 'Voir mes projets', admin_projects_path, class: "button-nav" %>
+
+</div>
+
+
 

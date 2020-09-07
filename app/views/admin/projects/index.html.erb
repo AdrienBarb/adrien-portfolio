@@ -1,12 +1,23 @@
-<%= link_to 'Creer un projet', new_admin_project_path %>
+<div class="admin-projects-index-wrapper">
+  <div class="top">
+    <h2>Mes projets:</h2>
+    <%= link_to 'Creer un projet', new_admin_project_path, class: 'button-nav' %>
+  </div>
 
-<h2>Mes projets:</h2>
-<% if @projects.any? %>
-  <% @projects.each do |project| %>
-    <%= link_to admin_project_path(project) do %>
-      <%= project.title %>
+  <div class="projects-list">
+    <% if @projects.any? %>
+      <% @projects.each_with_index do |project, index| %>
+        <%= link_to admin_project_path(project) do %>
+          #<%= index %> - <%= project.title %>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
+  </div>
+</div>
+
+
+
+
+
 
 
