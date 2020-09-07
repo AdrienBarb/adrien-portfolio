@@ -12,8 +12,8 @@
 
       <%= f.text_area :tag_names, placeholder: 'Tag', class: 'form-field' %>
 
-      <%= f.label :image %>
-      <%= f.file_field :image %>
+      <%= f.label :images %>
+      <%= f.file_field :images, :multiple => true %>
 
       <%= f.submit "Valider", class: 'valid-button' %>
 

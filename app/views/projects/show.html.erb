@@ -1,1 +1,20 @@
-project show
+<div class="project-show-wrapper">
+  <% if @project.images.any? %>
+    <%= cl_image_tag(@project.images[1].try(:key)) %>
+  <% end %>
+  <div class="project-info">
+    <div class="description">
+      <h2><%= @project.title %></h2>
+      <p> <%= @project.description %> </p>
+    </div>
+    <div class="stack">
+      <h4>Technique utilisé</h4>
+      <% if @project.tags.any? %>
+        <% @project.tags.each do |tag| %>
+          <%= tag.name %>
+        <% end %>
+      <% end %>
+    </div>
+    <a href="<%= @project.link %>" class="button-link">Visiter le site internet</a>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.project-show-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  color: $white;
+
+  img {
+    width: 65%;
+  }
+
+  .project-info {
+    width: 30%;
+  }
+
+  .description {
+    margin-bottom: 4rem;
+  }
+
+  .stack {
+    margin-bottom: 5rem;
+  }
+}

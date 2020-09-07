@@ -8,8 +8,10 @@
       <%= tag.name %>
     <% end %>
   <% end %>
-  <% if @project.image %>
-    <%= cl_image_tag(@project.image.try(:key)) %>
+  <% if @project.images.any? %>
+    <% @project.images.each do |image| %>
+      <%= cl_image_tag(image.try(:key)) %>
+    <% end %>
   <% end %>
 
   <div class="links">
