@@ -19,4 +19,31 @@
   .stack {
     margin-bottom: 5rem;
   }
+
+  ul {
+    padding: 0;
+  }
+
+  ul > li {
+    list-style: none;
+    display: inline;
+    margin-right: 0.8rem;
+    position: relative;
+  }
+
+  ul > li:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $orange;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: -7px;
+  }
+
+  ul >li:last-child:after {
+    content: none;
+  }
 }

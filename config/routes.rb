@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   resources :projects
 
-  get "/contact", to: "pages#contact"
+
+
+
+  get "contact", to: "pages#contact"
   get "/me", to: "pages#me"
 end
