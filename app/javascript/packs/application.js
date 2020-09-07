@@ -17,20 +17,81 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 
-first_sentence = document.querySelector('.visible')
-console.log(first_sentence)
-second_sentence = first_sentence.nextElementSibling
-console.log(second_sentence)
+// first_sentence = document.querySelector('.visible')
+
+// setTimeout(function(){
+//   first_sentence.classList.remove('visible');
+// },2000)
+
+// let a = 1
 
 
 
-  setTimeout(function(){
-    first_sentence.classList.remove('visible');
-  },2000)
 
-    setTimeout(function(){
-    second_sentence.classList.add('visible')
-  },2000)
+// function sleep(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+// let node_list = document.querySelectorAll('.sentence')
+// let b = 0
+
+// blink = setInterval(function () {
+//   element = node_list[0]
+//   element.style.opacity = (element.style.opacity == 1 ? 0 : 1);
+// }, 4000);
+
+
+// node_list[0].style.opacity = 1
+
+// sleep(1000).then(() => {
+//   node_list[0].style.opacity = 0
+// });
+
+// sleep(2000).then(() => {
+//   node_list[0].classList.remove('visible');
+//   node_list[1].classList.add('visible');
+// });
+
+// sleep(3000).then(() => {
+//   node_list[1].style.opacity = 1;
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function myTimer() {
+
+
+
+//   // node_list[b].style.display = "block";
+//   // console.log(node_list[b])
+//   // node_list[b].style.opacity = 1;
+
+  // sleep(2000).then(() => {
+  //   node_list[b].style.opacity = 0;
+  // });
+
+//   // sleep(2000).then(() => {
+//   //   node_list[b].style.display = "none";
+//   //   console.log(node_list[b])
+//   // });
+
+//   b++
+// }
+
+// setInterval(myTimer, 2000);
+
+
 
 // a = document.querySelectorAll('.sentence-show')
 
