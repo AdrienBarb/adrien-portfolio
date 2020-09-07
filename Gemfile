@@ -56,3 +56,4 @@ gem 'font-awesome-sass', '~> 5.13.0'
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
+gem 'pry', '~> 0.12.2'

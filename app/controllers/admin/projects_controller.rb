@@ -54,7 +54,7 @@ class Admin::ProjectsController < Admin::ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:title, :description, :link, :image)
+    params.require(:project).permit(:title, :description, :link, :image, :tag_names)
   end
 
 end

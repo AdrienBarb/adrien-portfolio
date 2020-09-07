@@ -1,3 +1,5 @@
+<%= link_to 'Creer un projet', new_admin_project_path %>
+
 <h2>Mes projets:</h2>
 <% if @projects.any? %>
   <% @projects.each do |project| %>
@@ -6,3 +8,5 @@
     <% end %>
   <% end %>
 <% end %>
+
+

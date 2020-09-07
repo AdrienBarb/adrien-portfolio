@@ -5,6 +5,11 @@
 <% if @project.image %>
   <%= cl_image_tag(@project.image.try(:key)) %>
 <% end %>
+<% if @project.tags.any? %>
+  <% @project.tags.each do |tag| %>
+    <%= tag.name %>
+  <% end %>
+<% end %>
 
 <%= link_to 'Modifier le projet', edit_admin_project_path(@project) %>
 <%= link_to 'Supprimer le projet', admin_project_path(@project), data: { confirm: 'Etes vous sur?' }, method: :delete %>
