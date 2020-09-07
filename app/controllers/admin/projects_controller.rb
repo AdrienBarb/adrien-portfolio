@@ -1,7 +1,7 @@
 class Admin::ProjectsController < Admin::ApplicationController
 
   before_action :set_user, only: [:new, :create]
-  before_action :set_project, only: [:show]
+  before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   def index
     @projects = Project.all
@@ -25,6 +25,24 @@ class Admin::ProjectsController < Admin::ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @project.update(project_params)
+      flash[:notice] = "Le projet a bien été modifie !"
+      redirect_to admin_project_path(@project)
+    else
+      flash[:alert] = "Le projet n'a pu être modifié !"
+      render :edit
+    end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to admin_projects_path
+  end
+
   private
 
   def set_user
@@ -36,7 +54,7 @@ class Admin::ProjectsController < Admin::ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:title, :description, :link)
+    params.require(:project).permit(:title, :description, :link, :image)
   end
 
 end
