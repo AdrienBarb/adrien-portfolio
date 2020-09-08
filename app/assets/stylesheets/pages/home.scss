@@ -4,13 +4,35 @@
   justify-content: center;
   height: 100vh;
   color: $white;
+  margin: 0 auto;
 
   .home-title {
     text-align: end;
-    line-height: 0.3;
+
+    h1 {
+      line-height: 0.3;
+    }
+
 
     #orange {
       color: $orange;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .home-wrapper {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+
+    .home-title {
+      text-align: center;
+
+      h1 {
+        line-height: 0.5;
+      }
+
     }
   }
 }

@@ -61,3 +61,37 @@
     }
   }
 }
+
+@media only screen and (max-width: 750px) {
+
+  .nav-bar-wrapper {
+    height: 126px;
+
+    .nav-bar {
+      flex-direction: column;
+
+    }
+
+    .social-link {
+      margin-top: 1rem;
+    }
+
+
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .nav-bar-wrapper {
+
+    .nav-bar {
+      flex-direction: column;
+      margin: 0 0.5rem;
+    }
+
+    .nav-link {
+      width: 98%;
+    }
+  }
+
+}
