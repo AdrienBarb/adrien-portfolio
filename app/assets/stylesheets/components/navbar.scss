@@ -22,6 +22,10 @@
     color: $white;
   }
 
+  h4::first-letter {
+    color: $orange;
+  }
+
   .nav-link {
     width: 396px;
     display: flex;
