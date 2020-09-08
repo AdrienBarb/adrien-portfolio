@@ -1,5 +1,5 @@
 .me-page-wrapper {
-  margin: 10rem 8rem 0 8rem;
+  margin: 10rem 8rem 2rem 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
 @media only screen and (max-width: 750px) {
   .me-page-wrapper {
     flex-direction: column;
-    margin: 10rem 0 0 0;
+    margin: 10rem 0 2rem 0;
 
     img {
       width: 300px;

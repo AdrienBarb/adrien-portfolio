@@ -1,5 +1,5 @@
 .project-show-wrapper {
-  margin: 10rem 8rem 0 8rem;
+  margin: 10rem 8rem 2rem 8rem;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -76,7 +76,7 @@
 
 @media only screen and (max-width: 750px) {
   .project-show-wrapper {
-    margin: 10rem 2rem 0 2rem;
+    margin: 12rem 2rem 2rem 2rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
