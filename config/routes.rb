@@ -16,5 +16,6 @@ Rails.application.routes.draw do
 
 
   get "contact", to: "pages#contact"
-  get "/me", to: "pages#me"
+  get "me", to: "pages#me"
+  get "service", to: "pages#service"
 end

@@ -27,7 +27,7 @@
   }
 
   .nav-link {
-    width: 396px;
+    width: 520px;
     display: flex;
     justify-content: space-between;
 
@@ -62,7 +62,7 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
 
   .nav-bar-wrapper {
     height: 126px;
@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
 
   .nav-bar-wrapper {
 

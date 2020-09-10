@@ -8,4 +8,7 @@ class PagesController < ApplicationController
 
   def me
   end
+
+  def service
+  end
 end
