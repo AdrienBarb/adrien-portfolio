@@ -19,6 +19,7 @@
 
     h2 {
       color: $orange;
+      margin-top: 0;
     }
 
     p {
@@ -54,7 +55,7 @@
 @media only screen and (max-width: 800px) {
 
   .service-page-wrapper {
-    margin: 10rem 2rem 2rem 2rem;
+    margin: 12rem 1rem 2rem 1rem;
 
     .service {
       max-width: 100%;
@@ -62,7 +63,11 @@
       text-align: center;
 
       .description {
-        max-width: 80%;
+        max-width: 95%;
+      }
+
+      img {
+        margin: 1rem 0;
       }
     }
 
@@ -75,6 +80,7 @@
 
     .line {
       width: 100%;
+      margin: 4rem 0;
     }
   }
 }

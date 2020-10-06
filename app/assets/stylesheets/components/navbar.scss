@@ -83,10 +83,15 @@
 @media only screen and (max-width: 550px) {
 
   .nav-bar-wrapper {
+    height: 138px;
 
     .nav-bar {
       flex-direction: column;
       margin: 0 0.5rem;
+
+      a {
+        text-align: center;
+      }
     }
 
     .nav-link {
